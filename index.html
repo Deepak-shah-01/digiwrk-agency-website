@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiwrk  Indore - Digital Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white smooth-scroll">
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Floating Particles -->
+    <div id="particles-container" class="fixed inset-0 pointer-events-none z-0"></div>
+    
+    <!-- Cyber Grid Overlay -->
+    <div class="cyber-grid fixed inset-0 pointer-events-none z-0 opacity-20"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl"><img src="logo.jpg" alt="logo"></span>
+                    </div>
+             
+                    <span class="text-xl font-bold gradient-text">Digiwrk</span>
+                    
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-glow">Home</a>
+                    <a href="#about" class="nav-glow">About</a>
+                    <a href="#services" class="nav-glow">Services</a>
+                    <a href="#portfolio" class="nav-glow">Portfolio</a>
+                    <a href="#pricing" class="nav-glow">Pricing</a>
+                    <a href="#contact" class="nav-glow">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>
+                    <a href="#portfolio" class="hover:text-blue-400 transition-colors">Portfolio</a>
+                    <a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="mb-6">
+                        <span data-text="DIGITAL MARKETING AGENCY">
+                            DIGITAL MARKETING AGENCY
+                        </span>
+                    </div>
+                    <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">
+                        <span class="neon-text orbitron">GROW YOUR</span><br>
+                        <span class="gradient-text text-5xl md:text-8xl font-black">BRAND ONLINE</span><br>
+                        <span class="text-2xl md:text-4xl text-gray-300">with Digiwrk</span>
+                    </h1>
+                    <div class="typing-animation text-xl text-gray-300 mb-8 max-w-2xl">
+                        Result-oriented digital marketing agency specializing in social media handling, ad campaigns, and creative editing
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="scrollToContact()" class="holographic px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 pulse-glow border-2 border-blue-500/50">
+                            <i class="fas fa-rocket mr-2"></i>Get Free Consultation
+                        </button>
+                        <button class="bg-transparent border-2 border-white/20 px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-white/10 card-3d">
+                            <i class="fas fa-play mr-2"></i>Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center relative">
+                    <!-- Central Holographic Display -->
+                    <div class="relative w-96 h-96">
+                        <!-- Rotating Rings -->
+                        <div class="absolute inset-0 border-2 border-blue-500/30 rounded-full rotate-continuous"></div>
+                        <div class="absolute inset-4 border-2 border-purple-500/30 rounded-full rotate-continuous" style="animation-direction: reverse; animation-duration: 15s;"></div>
+                        <div class="absolute inset-8 border-2 border-pink-500/30 rounded-full rotate-continuous" style="animation-duration: 25s;"></div>
+                        
+                        <!-- Central Morphing Blob -->
+                        <div class="absolute inset-16 morphing-blob bg-gradient-to-br from-blue-500/20 via-purple-600/20 to-pink-500/20 backdrop-blur-sm pulse-glow"> <img src="logo.jpg" alt="logo" style=border-radius:50%;></div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute top-8 right-8 w-16 h-16 holographic rounded-lg floating-3d flex items-center justify-center">
+                            <i class="fas fa-chart-line text-2xl text-blue-400"></i>
+                        </div>
+                        <div class="absolute bottom-8 left-8 w-12 h-12 holographic rounded-full floating-3d flex items-center justify-center" style="animation-delay: -2s;">
+                            <i class="fas fa-bullhorn text-lg text-purple-400"></i>
+                        </div>
+                        <div class="absolute top-1/2 -right-4 w-20 h-20 holographic rounded-xl floating-3d flex items-center justify-center" style="animation-delay: -4s;">
+                            <i class="fas fa-video text-2xl text-pink-400"></i>
+                        </div>
+                        <div class="absolute top-1/4 -left-8 w-14 h-14 holographic rounded-lg floating-3d flex items-center justify-center" style="animation-delay: -6s;">
+                            <i class="fas fa-palette text-xl text-cyan-400"></i>
+                        </div>
+                        
+                        <!-- Particle Effects -->
+                        <div class="absolute top-1/3 left-1/4 w-2 h-2 bg-blue-400 rounded-full floating-3d opacity-70" style="animation-delay: -1s;"></div>
+                        <div class="absolute bottom-1/3 right-1/4 w-3 h-3 bg-purple-400 rounded-full floating-3d opacity-70" style="animation-delay: -3s;"></div>
+                        <div class="absolute top-2/3 left-1/3 w-1 h-1 bg-pink-400 rounded-full floating-3d opacity-70" style="animation-delay: -5s;"></div>
+                        <div class="absolute bottom-1/4 right-1/3 w-2 h-2 bg-cyan-400 rounded-full floating-3d opacity-70" style="animation-delay: -7s;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-blue-500/5 rounded-full blur-xl floating-3d"></div>
+        <div class="absolute bottom-20 right-10 w-48 h-48 bg-purple-500/5 rounded-full blur-xl floating-3d" style="animation-delay: -3s;"></div>
+        <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-pink-500/5 rounded-full blur-xl floating-3d" style="animation-delay: -6s;"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 ">
+                <h2 class="text-4xl font-bold mb-4 ">About <span class="gradient-text ">Digiwrk </span></h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="content">
+                    <h3 class="text-2xl font-semibold mb-6"><u>Who We Are</u></h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Digiwrk Indore ek result-oriented digital marketing agency hai jo social media handling, ad campaigns aur creative editing ke through aapke business ko next level tak le jati hai.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        We specialize in creating compelling digital experiences that drive engagement, increase brand visibility, and generate measurable results for businesses of all sizes.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-400">50+</div>
+                            <div class="text-gray-400">Happy Clients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-400">100+</div>
+                            <div class="text-gray-400">Projects Done</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="bg-gradient-to-br from-blue-500/20 to-purple-600/20 p-8 rounded-2xl">
+                        <svg class="w-64 h-64" viewBox="0 0 300 300" fill="none">
+                            <rect x="50" y="50" width="200" height="150" rx="10" fill="url(#aboutGradient)" opacity="0.8"/>
+                            <circle cx="150" cy="100" r="20" fill="#fff"/>
+                            <rect x="70" y="140" width="160" height="8" rx="4" fill="#fff" opacity="0.7"/>
+                            <rect x="70" y="160" width="120" height="8" rx="4" fill="#fff" opacity="0.5"/>
+                            <defs>
+                                <linearGradient id="aboutGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea"/>
+                                    <stop offset="100%" style="stop-color:#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div class="mb-4">
+                    <span class="orbitron text-sm tracking-widest text-blue-400 uppercase">OUR EXPERTISE</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 orbitron">
+                    <span class="neon-text">DIGITAL</span> <span class="gradient-text">SERVICES</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto mb-6 pulse-glow"></div>
+                <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+                    Comprehensive digital marketing solutions powered by cutting-edge technology
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-3d holographic p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10 deepak">
+                        <div class="w-16 h-16 holographic rounded-xl mb-6 flex items-center justify-center floating-3d pulse-glow">
+                            <i class="fas fa-mobile-alt text-2xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 orbitron">Social Media Handling</h3>
+                        <p class="text-gray-400 mb-4">Advanced page management, AI-driven content calendar, real-time engagement strategies</p>
+                        <div class="flex items-center text-blue-400 text-sm">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            <span>300% Avg Growth</span>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/20 transition-colors"></div>
+                </div>
+                
+                <div class="card-3d holographic p-8 rounded-2xl relative overflow-hidden group" style="animation-delay: -1s;">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10 deepak">
+                        <div class="w-16 h-16 holographic rounded-xl mb-6 flex items-center justify-center floating-3d pulse-glow" style="animation-delay: -1s;">
+                            <i class="fas fa-bullseye text-2xl text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 orbitron">Ad Campaigns</h3>
+                        <p class="text-gray-400 mb-4">Precision-targeted Facebook, Instagram, Google Ads with AI optimization</p>
+                        <div class="flex items-center text-purple-400 text-sm">
+                            <i class="fas fa-rocket mr-2"></i>
+                            <span>500% ROI Average</span>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-purple-500/10 rounded-full blur-xl group-hover:bg-purple-500/20 transition-colors"></div>
+                </div>
+                
+                <div class="card-3d holographic p-8 rounded-2xl relative overflow-hidden group" style="animation-delay: -2s;">
+                    <div class="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10 deepak">
+                        <div class="w-16 h-16 holographic rounded-xl mb-6 flex items-center justify-center floating-3d pulse-glow" style="animation-delay: -2s;">
+                            <i class="fas fa-video text-2xl text-pink-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 orbitron">Creative Editing</h3>
+                        <p class="text-gray-400 mb-4">Next-gen video editing, viral reels, holographic posters, 3D thumbnails</p>
+                        <div class="flex items-center text-pink-400 text-sm">
+                            <i class="fas fa-fire mr-2"></i>
+                            <span>1M+ Views Generated</span>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-pink-500/10 rounded-full blur-xl group-hover:bg-pink-500/20 transition-colors"></div>
+                </div>
+                
+                <div class="card-3d holographic p-8 rounded-2xl relative overflow-hidden group" style="animation-delay: -3s;">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10 deepak">
+                        <div class="w-16 h-16 holographic rounded-xl mb-6 flex items-center justify-center floating-3d pulse-glow" style="animation-delay: -3s;">
+                            <i class="fas fa-brain text-2xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 orbitron">Brand Growth</h3>
+                        <p class="text-gray-400 mb-4">AI-powered strategy consulting, quantum analytics, future-proof growth</p>
+                        <div class="flex items-center text-cyan-400 text-sm">
+                            <i class="fas fa-infinity mr-2"></i>
+                            <span>Unlimited Potential</span>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl group-hover:bg-cyan-500/20 transition-colors"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="absolute top-10 right-10 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl floating-3d"></div>
+        <div class="absolute bottom-10 left-10 w-32 h-32 bg-purple-500/5 rounded-full blur-2xl floating-3d" style="animation-delay: -4s;"></div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our <span class="gradient-text">Work</span></h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-300 text-lg">Check out some of our recent projects and client success stories</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="card-hover card-3d bg-black p-6 rounded-2xl border border-gray-800 relative overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 h-48 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                         <a href="https://www.instagram.com/reel/DOJoN0hDOQs/?igsh=Mmc0bGQ3N2UwYTBn"><div class="absolute inset-0 morphing-shape bg-white/10"></div>
+                       <span class="text-white text-lg font-semibold relative z-10 wave-3d"> Social Media Handling</span>
+                        <div class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full floating-3d"></div>
+                        <div class="absolute bottom-4 left-4 w-6 h-6 bg-white/15 rounded-full floating-3d" style="animation-delay: -2s;"></div>
+                    </div></a>
+
+                    <h3 class="text-lg font-semibold mb-2">Instagram Account Handle</h3>
+                    <p class="text-gray-400 text-sm">100% increase in Follower & 3M+ Views</p>
+                    <div class="absolute -top-2 -right-2 w-12 h-12 bg-blue-500/20 rounded-full blur-lg"></div>
+                </div>
+                
+                <div class="card-hover card-3d bg-black p-6 rounded-2xl border border-gray-800 relative overflow-hidden" style="animation-delay: -1s;">
+                   <a href="https://www.instagram.com/reel/DMVQjRVTzY-/?igsh=MWVuNXNqbWlkbWFseg=="> <div class="bg-gradient-to-br from-purple-500 to-pink-600 h-48 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 morphing-shape bg-white/10" style="animation-delay: -4s;"></div>
+                        <span class="text-white text-lg font-semibold relative z-10 wave-3d" style="animation-delay: -1s;">Video Content</span>
+                        <div class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full floating-3d" style="animation-delay: -1s;"></div>
+                        <div class="absolute bottom-4 left-4 w-6 h-6 bg-white/15 rounded-full floating-3d" style="animation-delay: -3s;"></div>
+                        </a>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Fashion Brand Reels</h3>
+                    <p class="text-gray-400 text-sm">1M+ views generated</p>
+                    
+                    <div class="absolute -top-2 -right-2 w-12 h-12 bg-purple-500/20 rounded-full blur-lg"></div>
+                </div>
+                
+                <div class="card-hover card-3d bg-black p-6 rounded-2xl border border-gray-800 relative overflow-hidden" style="animation-delay: -2s;">
+                    <div class="bg-gradient-to-br from-green-500 to-blue-600 h-48 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 morphing-shape bg-white/10" style="animation-delay: -8s;"></div>
+                        <span class="text-white text-lg font-semibold relative z-10 wave-3d" style="animation-delay: -2s;">Ad Campaign</span>
+                        <div class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full floating-3d" style="animation-delay: -2s;"></div>
+                        <div class="absolute bottom-4 left-4 w-6 h-6 bg-white/15 rounded-full floating-3d" style="animation-delay: -4s;"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">E-commerce Sales</h3>
+                    <p class="text-gray-400 text-sm">500% ROI achieved</p>
+                    <div class="absolute -top-2 -right-2 w-12 h-12 bg-green-500/20 rounded-full blur-lg"></div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="bg-black p-8 rounded-2xl border border-gray-800">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Client Testimonials</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-semibold">R</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">_just2car</div>
+                                <div class="text-gray-400 text-sm">Car dealership</div>
+                                <span><img src="_just2car.jpg"alt:"hii"</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Digiwrk ne hamare Car dealership ko social media per completely transform kar diya hai.jisase Sales 100% badh gayi!"</p>
+                    </div>
+                    
+                    <div class="bg-gray-900 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-semibold">P</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Patelcardecor</div>
+                                <div class="text-gray-400 text-sm">Patel Car Decor & Car World</div>
+                                 <span><img src="patel_car.jpg"alt:"hii"</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Digiwrk ne hamare Patel Car Decor & Car World ko social media per completely transform kar diya hai.jisase Sales 100% badh gayi!"</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Pricing <span class="gradient-text">Plans</span></h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-300 text-lg">Choose the perfect plan for your business needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter Plan -->
+                <div class="pricing-card card-3d p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent"></div>
+                    <div class="relative z-10">
+                        <div class="text-center mb-8 wave-3d">
+                            <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                            <div >₹8,000<span class="text-lg text-gray-400">/month</span></div>
+                            <p class="text-gray-400">Perfect for small businesses</p>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li  style="animation-delay: -1s;"><i class="fas fa-check text-green-400 mr-3"></i>13 Videos</li>
+                            <li  style="animation-delay: -2s;"><i class="fas fa-check text-green-400 mr-3"></i>5 Posts</li>
+                            <li  style="animation-delay: -3s;"><i class="fas fa-check text-green-400 mr-3"></i>Basic Analytics</li>
+                            <li  style="animation-delay: -4s;"><i class="fas fa-check text-green-400 mr-3"></i>WhatsApp Support</li>
+                        </ul>
+                        <button onclick="scrollToContact()" class="w-full bg-gray-700 hover:bg-gray-600 py-3 rounded-xl transition-colors card-3d">
+                            Get Started
+                        </button>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-blue-500/10 rounded-full blur-xl"></div>
+                </div>
+                
+                <!-- Growth Plan -->
+                <div class="pricing-card featured card-3d p-8 rounded-2xl relative overflow-hidden">
+                    <center>
+                        <h3 class="text-2xl font-bold mb-2">Most Popular</h3>
+                    </center>
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10"></div>
+                    <div class="relative z-10">
+                        <div class="text-center mb-8 wave-3d" style="animation-delay: -1s;">
+                            <h3 class="text-2xl font-bold mb-2">Growth</h3>
+                            <div  style="animation-delay: -1s;">₹15,000<span class="text-lg text-gray-400">/month</span></div>
+                            <p class="text-gray-400">Best for growing businesses</p>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li  style="animation-delay: -3s;"><i class="fas fa-check text-green-400 mr-3"></i>5 Posts</li>
+                            <li  style="animation-delay: -4s;"><i class="fas fa-check text-green-400 mr-3"></i>Advanced Analytics</li>
+                            <li  style="animation-delay: -5s;"><i class="fas fa-check text-green-400 mr-3"></i>Priority Support</li>
+                            <li  style="animation-delay: -6s;"><i class="fas fa-check text-green-400 mr-3"></i>Ad Campaign Setup</li>
+                            <li  style="animation-delay: -2s;"><i class="fas fa-check text-green-400 mr-3"></i>30 Reels</li>
+                        </ul>
+                        <button onclick="scrollToContact()" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 py-3 rounded-xl transition-all card-3d">
+                            Get Started
+                        </button>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-500/20 rounded-full blur-xl"></div>
+                    <div class="absolute -top-4 -left-4 w-16 h-16 bg-blue-500/15 rounded-full blur-lg"></div>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="pricing-card card-3d p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent"></div>
+                    <div class="relative z-10">
+                        <div class="text-center mb-8 wave-3d" style="animation-delay: -2s;">
+                            <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                            <div  style="animation-delay: -2s;">₹25,000<span class="text-lg text-gray-400">/month</span></div>
+                            <p class="text-gray-400">For established businesses</p>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li  style="animation-delay: -3s;"><i class="fas fa-check text-green-400 mr-3"></i>55 Reels</li>
+                            <li  style="animation-delay: -4s;"><i class="fas fa-check text-green-400 mr-3"></i>10 Posts</li>
+                            <li  style="animation-delay: -5s;"><i class="fas fa-check text-green-400 mr-3"></i>Premium Analytics</li>
+                            <li  style="animation-delay: -6s;"><i class="fas fa-check text-green-400 mr-3"></i>24/7 Support</li>
+                            <li  style="animation-delay: -7s;"><i class="fas fa-check text-green-400 mr-3"></i>Full Campaign Management</li>
+                            <li  style="animation-delay: -8s;"><i class="fas fa-check text-green-400 mr-3"></i>Monthly Strategy Call</li>
+                        </ul>
+                        <button onclick="scrollToContact()" class="w-full bg-gray-700 hover:bg-gray-600 py-3 rounded-xl transition-colors card-3d">
+                            Get Started
+                        </button>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-green-500/10 rounded-full blur-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Contact <span class="gradient-text">Us</span></h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-300 text-lg">Ready to grow your business? Let's talk!</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-black p-8 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-semibold mb-6">Send us a message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Business Name</label>
+                            <input type="text" id="business" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Requirement</label>
+                            <textarea id="requirement" rows="4" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 py-3 rounded-xl font-semibold transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-black p-8 rounded-2xl border border-gray-800">
+                        <h3 class="text-2xl font-semibold mb-6">Get in touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Phone</div>
+                                    <div class="text-gray-400">+91 8085408101</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Email</div>
+                                    <div class="text-gray-400">digiwork.cm@gmail.com</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Location</div>
+                                    <div class="text-gray-400">Indore, Madhya Pradesh</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp Contact -->
+                    <a href="https://wa.me/918085408101" target="_blank" class="block bg-green-600 hover:bg-green-700 p-6 rounded-2xl text-center transition-colors">
+                        <i class="fab fa-whatsapp text-3xl mb-2"></i>
+                        <div class="font-semibold text-lg">Chat on WhatsApp</div>
+                        <div class="text-green-200">Quick response guaranteed!</div>
+                    </a>
+                    
+                    <!-- Social Media -->
+                    <div class="bg-black p-8 rounded-2xl border border-gray-800">
+                        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            
+                            <a href="https://www.instagram.com/digiwrk.co?igsh=MWl2djFpY2xhdzY3Mw%3D%3D&utm_source=qr" class="w-12 h-12 bg-pink-600 hover:bg-pink-700 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-instagram text-white"></i>
+                            </a> 
+                             <a href="https://youtube.com/@digiwrk?si=IWixcj6t4L0I5Kxy" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-youtube text-white"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/1AyWx7AseS/?mibextid=wwXIfr" class="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-facebook-f text-white"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl"><img src="logo.jpg" alt="logo" style="border-radius: 50%;"></span>
+                        </div>
+                        <span class="text-xl font-bold gradient-text">Digiwrk Indore</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner for digital marketing success. We help businesses grow their online presence through innovative strategies and creative solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Social Media Management</li>
+                        <li>Ad Campaigns</li>
+                        <li>Creative Editing</li>
+                        <li>Brand Strategy</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Digiwrk Indore. All rights reserved.</p><br>
+                <marquee><p><i>Made by Software Developer:Deepak kumar shah  </i></p> </marquee><br>
+                <P > <a href="https://www.linkedin.com/in/deepak-kumar-shah-0355132a2/"> WWW.Deepak.com</a> || contact No.-6261079670</P>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js></script>
+
+    </body>
+</html>
