@@ -287,7 +287,7 @@
         }
         
         /* Navigation Glow */
-        .nav-glow {
+        /* .nav-glow {
             position: relative;
             transition: all 0.3s ease;
         }
@@ -364,4 +364,38 @@
     background: rgba(0, 0, 0, 0.8) !important; /* Added slight opacity for better blending */
     padding: 20px;
     border-radius: 10px;
+} */
+
+/* jjjjjjj */
+/* ... (Existing styles above) ... */
+ 
+/* Navigation Glow */
+.nav-glow {
+    position: relative;
+    transition: all 0.3s ease;
 }
+
+/* ... (Nav Glow ::after and :hover styles) ... */
+
+#about {
+    /* ✅ CORRECTION: Using the filename '_just2car.jpg'. 
+       Make sure this file is in the SAME folder as your CSS file. 
+    */
+    background-image: url('_just2car.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.8); /* Added slight opacity for better blending */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.deepak {
+    background: rgba(0, 0, 0, 0.8) !important; /* Added slight opacity for better blending */
+    padding: 20px;
+    border-radius: 10px;
+}
+
