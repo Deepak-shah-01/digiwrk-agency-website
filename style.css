@@ -313,7 +313,7 @@
             text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
         }
         
-        #about{
+        /* #about{
             /* background-image: url('about_photo.jpg');
             background-size: cover;
             background-position: center;
@@ -336,4 +336,32 @@
             padding: 20px;
             border-radius: 10px;
         }
-    
+     */
+
+/*
+   ASSUMING your image file is: 
+   /images/just2_car.jpg 
+   OR
+   /images/about_photo.jpg
+*/
+#about {
+    /* Adjust the path if your images folder is named differently or located elsewhere.
+       Example: '../images/about_photo.jpg' if CSS is in a separate 'css' folder.
+    */
+    background-image: url('./images/about_photo.jpg'); /* Or url('./images/just2_car.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.8); /* Added slight opacity for better blending */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.deepak {
+    background: rgba(0, 0, 0, 0.8) !important; /* Added slight opacity for better blending */
+    padding: 20px;
+    border-radius: 10px;
+}
