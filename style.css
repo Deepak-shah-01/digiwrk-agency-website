@@ -398,4 +398,172 @@
     padding: 20px;
     border-radius: 10px;
 }
+\\   this is a new code 
 
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+   ========================= */
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+
+    /* General */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    h3 {
+        font-size: 1.3rem !important;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    /* Container padding */
+    .max-w-7xl {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Hero Section */
+    #home .grid {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 2.2rem !important;
+    }
+
+    #home .typing-animation {
+        white-space: normal;
+        border-right: none;
+        animation: none;
+    }
+
+    /* Hero Image / Animation */
+    #home .w-96 {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    /* Buttons */
+    button {
+        width: 100%;
+    }
+
+    /* About Section */
+    #about .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Services */
+    #services .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Portfolio */
+    #portfolio .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Pricing */
+    #pricing .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Contact */
+    #contact .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Footer */
+    footer .grid {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    /* Cards spacing */
+    .card-3d {
+        margin-bottom: 20px;
+    }
+
+    /* Reduce animation intensity on mobile */
+    .floating-3d,
+    .rotate-continuous,
+    .morphing-blob {
+        animation-duration: 10s !important;
+    }
+}
+
+
+/* Extra small devices */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    /* Hero circle smaller */
+    #home .w-96 {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    /* Navbar logo */
+    nav img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Reduce padding */
+    section {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    #services .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    #portfolio .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    #pricing .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    #contact .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    #home .grid {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+}
